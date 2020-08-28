@@ -36,7 +36,7 @@ def buscar(clave):
 while True:
 
     # Abre el documento
-    handle = open('Libros.txt') # Un archivo de texto en mi pc con los títulos y autores de los libros
+    handle = open('Libros.txt') # Un archivo de texto en mi pc con los títulos y autores de los libros (Disponible en repositorio)
 
     #Pide al usuario un apalabra clave
     clave = input('Inserte busqueda:\n')
