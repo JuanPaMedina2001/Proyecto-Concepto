@@ -1,0 +1,31 @@
+Aut: J.K. Rowling, Tít: Harry Potter y la piedra filosofal, Year: 1997
+Aut: J.R.R Tolkien, Tít: El Señor de los Anillos, Year: 1954
+Aut: Paulo Coelho, Tít: El Alquimista, Year: 1988
+Aut: Isabel Allende, Tít: La Ciudad de las Bestias, Year: 2002
+Aut: Suzanne Collins, Tít: Los Juegos del Hambre, Year: 2008
+Aut: Veronica Roth, Tít: Divergente, Year: 2011
+Aut: Stephenie Meyer, Tít: Crepúsculo, Year: 2005
+Aut: Stephenie Meyer, Tít: Luna Nueva, Year: 2006
+Aut: Stephenie Meyer, Tít: Eclipse, Year: 2007
+Aut: Adolf Hitler, Tít: Mein Kampf (Mi Lucha), Year: 1925
+Aut: Karl Marx, Tít: Manifiesto del Partido Comunista, Year: 1848
+Aut: Herman Melville, Tít: Moby Dick, Year: 1851
+Aut: Mark Twain, Tít: Las aventuras de Tom Sawyer, Year: 1876
+Aut: Robert Louis Stevenson, Tít: El extraño caso del doctor Jekyll y el señor Hyde, Year: 1886
+Aut: Julio Verne, Tít: Veinte mil leguas de viaje submarino, Year: 1870
+Aut: Julio Verne, Tít: La vuelta al mundo en ochenta días, Year: 1872
+Aut: Julio Verne, Tít: Viaje al centro de la Tierra, Year: 1864
+Aut: John Green, Tít: Bajo la misma estrella, Year: 2012
+Aut: John Green, Tít: Ciudades de papel, Year: 2008
+Aut: John Boyne, Tít: El niño con la pijama de rayas, Year: 2006
+Aut: Micheal Ende, Tít: Die undenliche Geschichte (La historia intemrinable), Year: 1979
+Aut: Lewis Carroll, Tít: Las aventuras de Alicia en el país de las maravillas, Year: 1865
+Aut: Lewis Carroll, Tít: A traves del espejo y lo que Alicia encontó allí, Year: 1871
+Aut: James Dashner, Tít: The Maze Runner, Year: 2009
+Aut: James Dashner, Tít: Maze Runner: Prueba de fuego, Year: 2010
+Aut: Stephen Hawking, Tít: La teoría del todo: El origen y el destino del universo, Year: 2002
+Aut: Walter Isaacson, Tít: Steve Jobs, Year: 2011
+Aut: Gabriel García Márquez, Tít: Crónica de una muerte anunciada, Year: 1981
+Aut: Suzanne Collins, Tít: Sinsajo, Year: 2010
+Aut: Germán Garmendia, Tít: Di Hola, Year: 2018
+Aut: J.R.R Tolkien, Tít: El Hobbit, Year: 1937
