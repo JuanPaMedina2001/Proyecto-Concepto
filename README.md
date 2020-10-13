@@ -9,7 +9,7 @@ El programa usara un archivo local donde se guarden todos los libros, en conjunt
 Utilizarémos 3 bibliotecas distintas; Tkinter para crear la interfaz, Pytz para conseguir la hora y la fecha, y Datetime para darle el formato correcto. Estas últimas 2 tienen el propósito de poderle mostrar al usuario la hora y la fecha de sus busquedas en el historial.
 
 ## Funciones
-El programa lleva diferentes funciones:\n
+El programa lleva diferentes funciones:
 
 buscar(): Abrirá el archivo de texto y usará la palabra clave para buscar en él todos los libros que concuerden con la palabra clave.
 
