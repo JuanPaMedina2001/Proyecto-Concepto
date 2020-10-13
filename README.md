@@ -20,3 +20,8 @@ ver(): Esta función se divide en dos: enter() y resumido(), en el que el usuari
 ver_hitorial(): Le mostrará al usuario unaventana donde pueden ver todas las busquedas que han hecho desde que se abrió el busquador junto con la hora y la fecha de la busqueda.
  
 agregar_hitorial(): Trabaja en colaboración con buscar() para añadir cada una de las busquedas a la lista de historial junto con su hora y la cantidad d e libros que se encontraron.
+
+
+## Instrucciones
+
+Para correr el programa es necesario bajar los documentos: Biblioteca.py y el achivo de texto Libros.txt del repositorio. Es necasario que ambos archivos esten ubicados en la misma dirección o carpeta en el ordenador del usuario. Depues correr desde la terminal, escribir la direccion de los archivos y el codigo python3 Biblioteca.py
