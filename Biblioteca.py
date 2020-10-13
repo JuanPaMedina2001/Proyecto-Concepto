@@ -23,7 +23,7 @@ from pytz import timezone # Para conseguir la fecha y hora local
 
 
 """
-============================== Fuciones a utilizar =============================
+============================== Funciones a utilizar ============================
 """
 
 def buscar(): # Encontrar un libro utilizando una palabra clave
