@@ -6,7 +6,7 @@ El proyecto consiste en crear una mini base de datos que cualquier secretario de
 ## Elementos Extra
 El programa usara un archivo local donde se guarden todos los libros, en conjunto con sus autores y el año de publicación. Durante el código se abrirá ese archivo y se utilizará para buscar los libros, y además agregar nuevos. 
 
-Utilizarémos 3 bibliotecas distintas; Tkinter para crear la interfaz, Pytz para conseguir la hora y la fecha, y Datetime para darle el formato correcto. Estas últimas 2 tienen el propósito de poderle mostrar al usuario la hora y la fecha de sus busquedas en el historial.
+Utilizarémos 3 bibliotecas distintas; Tkinter para crear la interfaz, Pytz para conseguir la hora y la fecha, y Datetime para darle el formato correcto. Estas últimas 2 tienen el propósito de poderle mostrar al usuario la hora y la fecha de sus busquedas en el historial. Con Tkinter usaremos los elementos de Toplevel, Button, Label, Checkbutton, Text, etc. para crear ventanas donde se mostrará la información y los controles de la biblioteca. 
 
 ## Funciones
 El programa lleva diferentes funciones:
