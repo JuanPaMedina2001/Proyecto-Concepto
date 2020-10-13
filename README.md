@@ -17,7 +17,7 @@ agregar(): Tomará 3 parametros: la Fecha de publicación, el Título del libro 
 
 ver(): Esta función se divide en dos: enter() y resumido(), en el que el usuario puede ver todos los libros en la biblioteca, el entero mostrará todos los libros individualmente de manera alfabética, y el resumido mostrará todos los autores con la cantidad de libros que tiene cada uno también ordenados alfabéticamente.
 
-ver_hitorial(): Le mostrará al usuario unaventana donde pueden ver todas las busquedas que han hecho desde que se abrió el busquador junto con la hora y la fecha de la busqueda.
+ver_historial(): Le mostrará al usuario unaventana donde pueden ver todas las busquedas que han hecho desde que se abrió el busquador junto con la hora y la fecha de la busqueda.
  
 agregar_hitorial(): Trabaja en colaboración con buscar() para añadir cada una de las busquedas a la lista de historial junto con su hora y la cantidad d e libros que se encontraron.
 
