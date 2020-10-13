@@ -1,0 +1,68 @@
+============================ Corrección 1 =====================================
+Sub-Competencia: plantea una situación problema que le permite aplicar y demostrar sus conocimientos de programación.
+
+Error Original: No subí avance 1 y la descripción del proyecto no era tan detallada.
+
+Cambio realizado: Aumentela descripción y el mejoré el formato de la descripción del proyecto en el readme y en el proyecto.
+
+Lineas de codigo dende se ve la corrección: 1-5 y readme en github.
+
+
+============================ Corrección 2 =====================================
+Sub-Competencia: usa de manera eficaz los operadores en un programa.
+
+Error Original: No subí avance 1.
+
+Cambio realizado: Incorporé el avance 1 dentro de los siguientes avances y en el resultado final.
+
+Lineas de codigo dende se ve la corrección: 45, 52-57, 105-110
+
+
+============================ Corrección 3 =====================================
+Sub-Competencia: usa la forma más a apropiada para guardar los datos (listas, variable, tipo de dato, etc...
+
+Error Original: No me revisaron avance 5.
+
+Cambio realizado: Incorporé los elementos del avance 5 en la entrega final.
+
+Lineas de codigo dende se ve la corrección: 140 (diccionarios), 172 (listas), 173 (listas anidadas), 212-213 (creación de dic y list)
+
+
+============================ Corrección 4 =====================================
+Sub-Competencia: El proyecto no contiene código basura.
+
+Error Original: No subí avance 1.
+
+Cambio realizado: Incorporé el avance 1 dentro de los siguientes avances y en el resultado final, analizé y expliqué cada paso para dejar claro que todo es necesario.
+
+Lineas de codigo dende se ve la corrección: Todo el Codigo
+
+
+============================ Corrección 5 =====================================
+Sub-Competencia: El estilo cumple con las normas y estándares enunciadas en el documento de PEP 8.
+
+Error Original: No subí avance 1 y me faltaban comentarios más detallados en mi programa.
+
+Cambio realizado: Al tener conceptos no vistos en clase, puse la mayor cantidad de explicación posible para comprobar que tengo los conocimientos sobre los conceptos aplicados no vistos en clase..
+
+Lineas de codigo dende se ve la corrección: 32, 41-43, 70, 79, 91-92, 123-125, 133-135, 151-153, 165-167, 180-182, 229-231, 238-241, 255-258, 281-284, 296-297
+
+
+============================ Corrección 6 =====================================
+Sub-Competencia: Usa herremientas de control de veriosnes.
+
+Error Original: No subí avance 1 y los avances los subía como entradas separadas.
+
+Cambio realizado: A partir del Avance 2, todos los avances se subieron al repositorio, sin embargo no estaban sobreescritos uno sobre otro.
+
+Lineas de codigo dende se ve la corrección: Github.
+
+
+============================ Corrección 7 =====================================
+Sub-Competencia: Explica como funciona la biblioteca extra.
+
+Error Original: No subí avance 1 y la explicación de las bibliotecas era vaga.
+
+Cambio realizado: Incluí pequeñas definiciones en el programa de cada biblioteca, y una descripción más elaborada en el Readme del proyecto.
+
+Lineas de codigo dende se ve la corrección: 17-19 y Github Readme.
