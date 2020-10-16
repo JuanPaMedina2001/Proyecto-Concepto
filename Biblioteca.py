@@ -1,6 +1,6 @@
 """
 Este proyecto simula una interfaz que utilizaría una biblioteca para
-ayudar a los usuarios a encontrar los libros dentre de ella, además de poder
+ayudar a los usuarios a encontrar los libros dentro de ella, además de poder
 agregar libros nuevos y llevar un registro de las busquedas recientes.
 
 Creado por: Juan Pablo Medina O'Farrill
@@ -61,6 +61,7 @@ def buscar(): # Encontrar un libro utilizando una palabra clave
         c = str(c)
         buscarWindowText.insert(END, '\nHe encontrado '+ c + ' resultados para: ' + clave+ '\n')
         agregar_historial(clave, c) # Agregaremos la busqueda hecha al historial de busquedas.
+        handle.close()
 
 """-----------------------------------------------------------------------------"""
 
@@ -74,6 +75,7 @@ def agregar(): # Añadir un libro nuevo al archivode texto.
     año = agregarAnoE.get() # Y por último el Año.
     handle = open('Libros.txt', 'a') # Abrimos el documento donde estan todos los libros en modo append.
     handle.write('Aut: '+ autor +', ' + 'Tít: ' + titulo + ', ' + 'Year: ' + año + '\n')
+    handle.close()
     # Añadimos todo lo que escribimos al archivo.
 
 """ Lo siguiente le hará saber a el usuario que su libro ha sido añadido exitosamente al documento"""
@@ -142,6 +144,7 @@ def resumido(): # Mostrar la biblioteca entera de una manera resumida.
     for keys,values in sorted(dic.items()): # Ordena todo de manera alfabética.
         resumenWindowText.insert(END, '\t'+str(keys)+' - '+str(values)+' libros.'+'\n')
         # Mostramos todo en el bloque de texto dentro de la ventna.
+    handle.close()
 
 """-----------------------------------------------------------------------------"""
 
@@ -313,6 +316,10 @@ Libro "Python for Everybody" de Charles R. Severance (2009). Atualizado a Python
 
 MOOC "Python for Everybody" Modulo 1 y 2 de Michigan Univerity atraves de coursera.com
 cursado en Junio-Julio 2020
+
+    Certificados
+        https://coursera.org/share/bb3cb121f874d9aa940af447a8f7a059
+        https://coursera.org/share/c8fee54e9a80ab4ecb3ff510b7fe8932
 
 Tutorialspoint (2020) "Python 3 - GUI Programming (Tkinter)" URL:
     https://www.tutorialspoint.com/python3/python_gui_programming.htm ,
