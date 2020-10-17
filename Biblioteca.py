@@ -29,7 +29,8 @@ from pytz import timezone # Para conseguir la fecha y hora local
 def buscar(): # Encontrar un libro utilizando una palabra clave
 # (Uso de cadenas de texto, operadores, for, if y variables)
 
-""" Empezamos creando la ventana donde apareceran los resutados de la busqueda"""
+    """
+    Empezamos creando la ventana donde apareceran los resutados de la busqueda"""
 
     clave = buscadorEntry.get() #Sacamos la clave de la entrada de texto del buscador
     buscarWindow = Toplevel() # Creamos la ventana
@@ -38,9 +39,9 @@ def buscar(): # Encontrar un libro utilizando una palabra clave
     buscarWindowText.insert(INSERT, 'Resultados para tu busqueda:\n\n') # Insertamos encabezado
     buscarWindowText.pack() # Metemos el espacio de texto dentro de la ventana.
 
-""" Ahora buscaremos la palabra clave dentro de el archivo de texto con la
-    biblioteca de libros entera e iremos checando libro por libro por la palabra
-    clave, ya sea Año, Autor o Título """
+    """ Ahora buscaremos la palabra clave dentro de el archivo de texto con la
+    biblioteca de libros entera e iremos checando libro por libro
+    por la palabra clave, ya sea Año, Autor o Título """
 
     if len(clave) >= 1: # Asegurarse de que haya escrito texto.
         c = 0 # Iniciamos counter
@@ -55,11 +56,13 @@ def buscar(): # Encontrar un libro utilizando una palabra clave
                 index3 = line.find('Year:')
                 año = index3 + 6 # Inidce del Año
                 c = c + 1 # Añadimos 1 al counter por cada libro que coincida.
-                buscarWindowText.insert(END, '\t'+str(c)+') '+line[titulo:index3-2]+' - '+
-                line[autor:index1-2]+' - '+line[año:]+'\n')
+                buscarWindowText.insert(END, '\t'+str(c)+') '+
+                line[titulo:index3-2]+' - '+line[autor:index1-2]+
+                ' - '+line[año:]+'\n')
                 # Añadimos todo lo que hayamos encontrado al espacio de texto en la ventana.
         c = str(c)
-        buscarWindowText.insert(END, '\nHe encontrado '+ c + ' resultados para: ' + clave+ '\n')
+        buscarWindowText.insert(END, '\nHe encontrado '+ c +
+        ' resultados para: ' + clave+ '\n')
         agregar_historial(clave, c) # Agregaremos la busqueda hecha al historial de busquedas.
         handle.close()
 
@@ -68,17 +71,20 @@ def buscar(): # Encontrar un libro utilizando una palabra clave
 def agregar(): # Añadir un libro nuevo al archivode texto.
 # (Uso de variables, archivos y cadenas de texto)
 
-""" Añadiremos libros nuevos al archivo de texto donde estan todos los libros"""
+    """ Añadiremos libros nuevos al archivo de texto donde estan todos
+    los libros"""
 
     autor = agregarAutorE.get() # Sacamos el nombre del Autor de la entrada de texto.
     titulo = agregarTituloE.get() # Tambien el Título.
     año = agregarAnoE.get() # Y por último el Año.
     handle = open('Libros.txt', 'a') # Abrimos el documento donde estan todos los libros en modo append.
-    handle.write('Aut: '+ autor +', ' + 'Tít: ' + titulo + ', ' + 'Year: ' + año + '\n')
+    handle.write('Aut: '+ autor +', ' + 'Tít: ' + titulo + ', ' + 'Year: '
+     + año + '\n')
     handle.close()
     # Añadimos todo lo que escribimos al archivo.
 
-""" Lo siguiente le hará saber a el usuario que su libro ha sido añadido exitosamente al documento"""
+    """ Lo siguiente le hará saber a el usuario que su libro ha sido añadido
+    exitosamente al documento"""
 
     agregarAnadidoL.grid(row=6, column=2, columnspan=2) # Avisamos que se añadió.
     agregarAutorE.delete(0,END) # Borrar todo lo que esté en las entradas de texto.
@@ -90,8 +96,8 @@ def agregar(): # Añadir un libro nuevo al archivode texto.
 def entero(): # Mostrar la biblioteca entera de libros.
 # (Uso de variables, for y cadenas de texto)
 
-""" Esta función le mostrará a el usuario todos los libros de la biblioteca
-    Empezamos creando una ventana nueva."""
+    """ Esta función le mostrará a el usuario todos los libros de
+    la biblioteca. Empezamos creando una ventana nueva."""
 
     enteroWindow = Toplevel() # Creamos ventana nueva.
     enteroWindow.title('Biblioteca Entera') # Le cambiamos el título
@@ -110,11 +116,13 @@ def entero(): # Mostrar la biblioteca entera de libros.
         index3 = line.find('Year:')
         año = index3 + 6 # Inidce Año
         c = c + 1 # # Añadimos 1 al counter por cada libro.
-        enteroWindowText.insert(END, '\t'+str(c)+') '+line[titulo:index3-2]+' - '
-        +line[autor:index1-2]+' - '+line[año:]+'\n') # Le damos un formato amigable
+        enteroWindowText.insert(END, '\t'+str(c)+') '
+        +line[titulo:index3-2]+' - '+line[autor:index1-2]+' - '
+        +line[año:]+'\n') # Le damos un formato amigable
         # Mostramos en el bloque de texto cada una de los libros en la biblioteca.
     c = str(c)
-    enteroWindowText.insert(END, '\nExisten '+ c+ ' libros en la biblioteca.\n')
+    enteroWindowText.insert(END, '\nExisten '+ c
+    + ' libros en la biblioteca.\n')
     # Numero de libros en la biblioteca.
 
 """-----------------------------------------------------------------------------"""
@@ -122,7 +130,7 @@ def entero(): # Mostrar la biblioteca entera de libros.
 def resumido(): # Mostrar la biblioteca entera de una manera resumida.
 # (Uso de archivos, variables, diccionarios, for y cadenas de texto)
 
-""" Tal vez el usuario quiera ver todos los libros pero de manera resumida,
+    """ Tal vez el usuario quiera ver todos los libros pero de manera resumida,
     para eso utilizamos esta opcion la cual solo muestra la cantidad de libros
     por autor"""
 
@@ -132,9 +140,9 @@ def resumido(): # Mostrar la biblioteca entera de una manera resumida.
     resumenWindowText.insert(INSERT, 'Biblioteca de libros:\n\n') # Le agregamos un encabecado
     resumenWindowText.pack() # Mostramos el bloque de texto en la ventana.
 
-""" Vamos a utilizar diccionarios para guardar el nombre del autor con su cantidad
-    de libros en un estilo de histograma que podamos mostrar de manera textual al
-    usuario """
+    """Vamos a utilizar diccionarios para guardar el nombre del autor con
+    su cantidad de libros en un estilo de histograma que podamos mostrar
+    de manera textual al usuario """
 
     handle = open('Libros.txt') # Abrimos el archivo con los libros.
     for line in handle: # Checamos cada linea/libro
@@ -142,7 +150,8 @@ def resumido(): # Mostrar la biblioteca entera de una manera resumida.
         y = line[5:index-2] # Le sacamos el Autor a cada Libro.
         dic[y] = dic.get(y,0) + 1 # Añadimos el Autor y # de libro al diccionario, si no existe empieza de 0.
     for keys,values in sorted(dic.items()): # Ordena todo de manera alfabética.
-        resumenWindowText.insert(END, '\t'+str(keys)+' - '+str(values)+' libros.'+'\n')
+        resumenWindowText.insert(END, '\t'+str(keys)+' - '+str(values)+
+        ' libros.'+'\n')
         # Mostramos todo en el bloque de texto dentro de la ventna.
     handle.close()
 
@@ -151,9 +160,9 @@ def resumido(): # Mostrar la biblioteca entera de una manera resumida.
 def ver(): # Decidir qué tipo de resumen ver.
 # (Uso de if y funciones)
 
-""" En la interfaz pricipal hay un checkbox que le dejará al usuario decidir
-    cómo ver el resumen de libros de la biblioteca, resumida o no. Hay que
-    checar qué es lo que decidió"""
+    """ En la interfaz pricipal hay un checkbox que le dejará al usuario
+    decidir cómo ver el resumen de libros de la biblioteca, resumida o no.
+    Hay que checar qué es lo que decidió"""
 
     if resumen.get() == 1: # Revisamos si el checkbox está seleccionado o no.
         resumido() # corremos resumido si está seleccionado,
@@ -180,9 +189,9 @@ def agregar_historial(clave, reps): #Recibe la clave buscada y los libros encont
 def ver_historial(): #Mostrarle al usuario su historial de busqueda.
 # (Uos de variables, for, listas anidadas y cadenas de texto)
 
-    """ Ahora sí, debemos mostrarle al usuario todas las búsquedas que ha hecho
-    desde que se abrió el buscador, para eso sacaremos los datos de una Lista
-    anidada que se hizo en la función anterior"""
+    """ Ahora sí, debemos mostrarle al usuario todas las búsquedas que ha
+    hecho desde que se abrió el buscador, para eso sacaremos los datos de
+    una Lista anidada que se hizo en la función anterior"""
 
     histWindow = Toplevel() # Creamos ventana nueva
     histWindow.title('Historial de Busqueda') # Le cambiamos el título.
@@ -195,7 +204,8 @@ def ver_historial(): #Mostrarle al usuario su historial de busqueda.
         hora = busqueda[0] # Sacamos la hora/fecha
         clave = busqueda[1] # Sacamos la clave buscada
         reps = busqueda[2] # Sacamos la cantidad de libros encontrados
-        histWindowText.insert(END, '\tFecha: '+hora+" - Busqueda: "+clave+" - Resultado: "+reps+" libros\n")
+        histWindowText.insert(END, '\tFecha: '+hora+" - Busqueda: "+clave+
+        " - Resultado: "+reps+" libros\n")
         # Lo ponemos en un formato más amigable dentro del bloque de texto.
 
 """-----------------------------------------------------------------------------"""
@@ -238,10 +248,11 @@ titulo.grid(row=0, columnspan=4) # Lo colocamos en grid
 
 """-------------------------- Sistema de busqueda ------------------------------"""
 
-""" Para el sistema de búsqueda, crearemos una entrada de texto donde el usuraio
-    pueda escribir lo que quiera encontrar, además de dos botones, uno para empezar
-    la busqueda y otro par apoder ver su historial de busquedas, cada boton tiene
-    un enlace directo a la función que debe realizar al ser pulsado."""
+""" Para el sistema de búsqueda, crearemos una entrada de texto donde el
+    usuraio pueda escribir lo que quiera encontrar, además de dos botones,
+    uno para empezar la busqueda y otro par apoder ver su historial de
+    busquedas, cada boton tiene un enlace directo a la función que debe
+    realizar al ser pulsado."""
 
 buscadorLabel = Label(root, text='Buscar Libro') # Subtitulo
 buscadorEntry = Entry(root) # Entrada de texto par aescribir lo que se va a buscar.
@@ -283,12 +294,14 @@ agregarButton.grid(row=5, column=2, columnspan=2)# Lo colocamos en grid
 
 """ Una pequeña sección de la interfaz principal para seleccionar qué tipo de
     vista de los libros quiere ver el usuario. Esta sección tiene un checkbox
-    que el usuario puede seleccionar para cambiar el tipo de vista que quiere ver.
-    El checkbox funciona en binario, es decir, si esta seleccionado (1) o no (0)."""
+    que el usuario puede seleccionar para cambiar el tipo de vista que quiere
+    ver. El checkbox funciona en binario, es decir, si esta seleccionado
+    (1) o no (0)."""
 
 resumen = IntVar() # Inicia la variable resumen en formato de entero. Guardará el estatus del checkbox.
 verButton = Button(root, text='Ver todo', command=ver) # Botón para iniciar la vista de la biblioteca.
-verCheck = Checkbutton(root, text='Resumir', variable = resumen, onvalue=1, offvalue=0)
+verCheck = Checkbutton(root, text='Resumir', variable = resumen,
+onvalue=1, offvalue=0)
 # Creamos el checkbox el cual puede estar seleccionado o no, y es evalor se guardará en la variable resumen.
 
 verButton.grid(row=5, column=0)# Lo colocamos en grid
@@ -311,11 +324,11 @@ root.mainloop() # Esto solo mantendrá el programa abierto hasta que salga manua
 """
 ======================== Referencias de Autoaprendizaje ========================
 
-Libro "Python for Everybody" de Charles R. Severance (2009). Atualizado a Python3
-    en 2015
+Libro "Python for Everybody" de Charles R. Severance (2009).
+Actualizado a Python3 en 2015
 
-MOOC "Python for Everybody" Modulo 1 y 2 de Michigan Univerity atraves de coursera.com
-cursado en Junio-Julio 2020
+MOOC "Python for Everybody" Modulo 1 y 2 de Michigan Univerity atraves
+de coursera.com, cursado en Junio-Julio 2020
 
     Certificados
         https://coursera.org/share/bb3cb121f874d9aa940af447a8f7a059
